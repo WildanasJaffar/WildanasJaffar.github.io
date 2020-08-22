@@ -215,12 +215,12 @@
                       <div class="hire hire-light text-dark">
                          <h2>${projects[i].title}</h2>
                          <p>
-                             <div id="divMain">
-                               <div id='left-div' class="resume-content">
-                                 <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid'
+                             <div class="row">
+                               <div class="col-md-6">
+                                 <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-responsive'
                                    src='${projects[i].img}'>
                                </div>
-                               <div id='right-div' class='resume-content'>
+                               <div class="col-md-6">
                                  <div class="subheading mb-0 text-dark">
                                    <p>${projects[i].content}</p>
                                  </div>
@@ -238,7 +238,7 @@
          
          function open_modal(idx){
            $('#app_title').html(projects[idx].title);
-           $('#modal_app_img').html(`<img src="${projects[idx].img}" alt="${projects[idx].title}" class="col-md-12">`);
+           $('#modal_app_img').html(`<img src="${projects[idx].img}" alt="${projects[idx].title}" class="img-responsive">`);
            $('#modal_app_content').html(`<p>${projects[idx].content}</p>`);
          }
       </script>
